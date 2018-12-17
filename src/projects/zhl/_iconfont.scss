@@ -1,0 +1,27 @@
+@import "../../scss/base/settings";
+$icon-font-baseUrl: "../assets/fonts/iconfont.ttf";
+@font-face {font-family: "iconfont";
+  src: url($icon-font-baseUrl) format('truetype');
+}
+.icon,[class*="icon-"] {
+    @include icons;
+}
+
+.icon-radio-checked:before { content: "\e60d"; }
+.icon-radio-unchecked:before { content: "\e60e"; }
+.icon-checked-hollow:before { content: "\e60f"; }
+.icon-checked-solid:before { content: "\e600"; }
+.icon-search:before { content: "\e601"; }
+.icon-unchecked:before { content: "\e602"; }
+.icon-location:before { content: "\e603"; }
+.icon-arrow-up:before { content: "\e604"; }
+.icon-arrow-down:before { content: "\e605"; }
+.icon-arrow-left:before { content: "\e606"; }
+.icon-arrow-right:before { content: "\e607"; }
+.icon-account:before { content: "\e608"; }
+.icon-mine:before { content: "\e60a"; }
+.icon-order:before { content: "\e60b"; }
+.icon-password:before { content: "\e60c"; }
+.icon-check-2:before { content: "\e609"; }
+.icon-check:before { content: "\e610"; }
+.icon-validation:before { content: "\e611"; }

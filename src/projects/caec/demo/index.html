@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/caec-mobile.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!--<script src="../lib/zepto.min.js"></script>-->
+    <!--<script src="../js/frozen.js"></script>-->
+    <script src="//cdn.bootcss.com/jquery/1.12.1/jquery.js"></script>
+    <title>CAEC -- demo+</title>
+</head>
+
+<body id="demo">
+    <div class="header border-b">
+        <h1 class="title">首页</h1>
+
+        <div class="btn pull-left">left</div>
+        <div class="btn pull-right">right</div>
+    </div>
+    <div class="footer border-t padding">
+        <div class="grid">
+            <div class="row">
+                <a class="col-20 tab active" href="#anchor_grid">
+                    <i class="icon-home-fill"></i>
+
+                    <div class="icons-txt">grid</div>
+                </a>
+                <a class="col-20 tab" href="#anchor_text">
+                    <i class="icon-category-fill"></i>
+
+                    <div class="icons-txt">text</div>
+                </a>
+                <a class="col-20 tab" href="#anchor_border">
+                    <i class="icon-activity-fill"></i>
+
+                    <div class="icons-txt">border</div>
+                </a>
+                <a class="col-20 tab" href="#anchor_btn">
+                    <i class="icon-cart-fill"></i>
+
+                    <div class="icons-txt">btn</div>
+                </a>
+                <a class="col-20 tab" href="#anchor_icon">
+                    <i class="icon-profile-fill"></i>
+
+                    <div class="icons-txt">icon</div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="grid" id="grid">
+            <h1 class="title">栅格</h1>
+
+            <h2 class="title">百分比-grid</h2>
+
+            <div class="row bdr">
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+                <div class="col-90">90%</div>
+                <div class="col-20">20%</div>
+                <div class="col-80">80%</div>
+                <div class="col-30">30%</div>
+                <div class="col-70">70%</div>
+                <div class="col-33">33%</div>
+                <div class="col-67">67%</div>
+                <div class="col-40">40%</div>
+                <div class="col-60">60%</div>
+                <div class="col-50">50%</div>
+                <div class="col-50">50%</div>
+                <div class="col-25">25%</div>
+                <div class="col-75">75%</div>
+                <div class="col-80">80%</div>
+                <div class="col-10">10%</div>
+                <div class="col-10">10%</div>
+            </div>
+            <h2 class="title">flex-grid</h2>
+
+            <div class="row-flex bdr">
+                <div class="col">1/10</div>
+                <div class="col-2">2/10</div>
+                <div class="col-3">3/10</div>
+                <div class="col-4">4/10</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-1">1/2</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-1">1/2</div>
+                <div class="col-1">1/2</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-1">1/3</div>
+                <div class="col-1">1/3</div>
+                <div class="col-1">1/3</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-1">1/3</div>
+                <div class="col-2">2/3</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-1">1/5</div>
+                <div class="col-4">4/5</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col">1/4</div>
+                <div class="col-3">3/4</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-3">1/3</div>
+                <div class="col-3">1/3</div>
+                <div class="col-3">1/3</div>
+            </div>
+            <div class="row-flex bdr">
+                <div class="col-3">3/10</div>
+                <div class="col-3">3/10</div>
+                <div class="col-3">3/10</div>
+                <div class="col-1">1/10</div>
+            </div>
+            <h2 class="title">二等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-50 border-r border-t">
+                    <div style="background:#fff">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-t">
+                    <div class="goods-item" style="background:#fff">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">带槽</h3>
+
+            <div class="row gutter-yes" style="background-color: #f33;">
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">三等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">带槽</h3>
+
+            <div class="row gutter-yes" style="background-color: #f33;">
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250/999/aaa">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">四等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#">
+                            <img src="http://placehold.it/250x250">
+                        </a>
+                        <a class="goods-title nowrap-multi" href="">商品标题商品标题商品标题商品标题</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">带槽</h3>
+
+            <div class="row gutter-yes" style="background-color: #eee;">
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk1"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-wechat bk2"></i>
+
+                        <div>微信支付</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk3"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk4"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk5"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk6"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk7"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+                <div class="col-25">
+                    <div class="piece4item">
+                        <i class="icon-alipay bk8"></i>
+
+                        <div>支付宝</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text padding" id="text">
+            <h1 class="title">文字</h1>
+
+            <h1>我是H1标签，看看对应的文字。</h1>
+
+            <h2>我是H2标签，看看对应的文字。</h2>
+
+            <h3>我是H3标签，看看对应的文字。</h3>
+            <h4>我是H4标签，看看对应的文字。</h4>
+            <h5>我是H5标签，看看对应的文字。</h5>
+            <h6>我是H6标签，看看对应的文字。</h6>
+
+            <h2 class="title">文字截断</h2>
+
+            <p class="nowrap">
+                为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！
+            </p>
+
+            <p class="nowrap-multi">
+                为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！
+            </p>
+
+            <p class="nowrap-multi" style="-webkit-line-clamp: 3;">
+                为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！为了减轻服务器压力，图片做了临时缓存，请勿使用重定向跳转之后的地址，而是使用上述标准地址，以保证不出现图片404错误！
+            </p>
+        </section>
+        <section id="border">
+            <h1 class="title">细边框</h1>
+
+            <div class="demo-item grid">
+                <div class="demo-block row">
+                    <ul class="list-text border-list">
+                        <li class="border-t">上边框</li>
+                        <li class="border-r">右边框</li>
+                        <li class="border-b">下边框</li>
+                        <li class="border-l">左边框</li>
+                        <li class="border-t border-b">上下边框</li>
+                        <li class="border-l border-r">左右边框</li>
+                        <li class="border">边框</li>
+                        <li class="border-radius">圆角边框</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="btn">
+            <h1 class="title">按钮</h1>
+
+            <div class="demo-item">
+                <p class="demo-desc">普通超小按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn-xs">
+                            确定
+                        </button>
+                        <button class="btn-xs active">
+                            确定
+                        </button>
+                        <button class="btn-xs disabled">
+                            取消
+                        </button>
+                        <button class="btn-xs" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">普通小按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn-sm">
+                            确定
+                        </button>
+                        <button class="btn-sm active">
+                            确定
+                        </button>
+                        <button class="btn-sm disabled">
+                            取消
+                        </button>
+                        <button class="btn-sm" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">普通按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn">
+                            确定
+                        </button>
+                        <button class="btn active">
+                            确定
+                        </button>
+                        <button class="btn disabled">
+                            取消
+                        </button>
+                        <button class="btn" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">带进度的按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn btn-progress">确定</button>
+                        <button class="btn btn-progress" data-prog="50%">
+                            <span class="txt">50%</span>
+                            <a class="btn-inner">
+                                <span class="txt">50%</span>
+                            </a>
+                        </button>
+                        <button class="btn btn-progress" disabled>取消</button>
+                    </div>
+                </div>
+                <script>
+                    (function () {
+                        var btn = $(".btn-progress[data-prog]");
+                        var txt = btn.attr("data-prog");
+                        btn.find(".btn-inner").css({ "width": txt });
+                        btn.find(".txt").text(txt);
+                    })();
+                </script>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">主色按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn btn-primary">
+                            确定
+                        </button>
+                        <button class="btn btn-primary active">
+                            确定
+                        </button>
+                        <button class="btn btn-primary disabled">
+                            确定
+                        </button>
+                        <button class="btn btn-primary" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">辅色按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn btn-secondary">
+                            确定
+                        </button>
+                        <button class="btn btn-secondary active">
+                            确定
+                        </button>
+                        <button class="btn btn-secondary disabled">
+                            确定
+                        </button>
+                        <button class="btn btn-secondary" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">普通大按钮</p>
+
+                <div class="demo-block">
+
+                    <div class="btn-wrap">
+                        <button class="btn-lg">
+                            确定
+                        </button>
+                        <button class="btn-lg active">
+                            确定
+                        </button>
+                        <button class="btn-lg disabled">
+                            取消
+                        </button>
+                        <button class="btn-lg" disabled>
+                            取消
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">主色大按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn-lg btn-primary">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-primary active">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-primary disabled">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-primary" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">辅色大按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-wrap">
+                        <button class="btn-lg btn-secondary">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-secondary active">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-secondary disabled">
+                            确定
+                        </button>
+                        <button class="btn-lg btn-secondary" disabled>
+                            取消
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item">
+                <p class="demo-desc">普通按钮组</p>
+
+                <div class="demo-block">
+                    <div class="btn-group">
+                        <button class="btn-lg">
+                            拒绝
+                        </button>
+                        <button class="btn-lg btn-secondary">
+                            拒绝
+                        </button>
+                        <button class="btn-lg btn-primary">
+                            同意
+                        </button>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-lg disabled">
+                            拒绝
+                        </button>
+                        <button class="btn-lg btn-secondary active">
+                            拒绝
+                        </button>
+                        <button class="btn-lg btn-primary active">
+                            同意
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="demo-item" style="padding:0 10px;">
+                <hr>
+                <div class="btn-lg">btn-lg</div>
+                <br>
+
+                <div class="btn-lg btn-primary">btn-lg btn-primary</div>
+                <br>
+
+                <div class="btn-lg btn-secondary">btn-lg btn-secondary</div>
+                <br>
+
+                <div class="btn-lg btn-mono">btn-lg btn-mono</div>
+                <br>
+
+                <div class="btn-lg disabled">btn-lg .disabled</div>
+                <br>
+                <hr>
+                <div class="btn">btn</div>
+                <br>
+
+                <div class="btn btn-primary">btn btn-primary</div>
+                <br>
+
+                <div class="btn btn-secondary">btn btn-secondary</div>
+                <br>
+
+                <div class="btn btn-mono">btn btn-mono</div>
+                <br>
+
+                <div class="btn disabled">btn .disabled</div>
+                <br>
+                <hr>
+                <div class="btn-sm">btn-sm</div>
+                <br>
+
+                <div class="btn-sm btn-primary">btn-sm btn-primary</div>
+                <br>
+
+                <div class="btn-sm btn-secondary">btn-sm btn-secondary</div>
+                <br>
+
+                <div class="btn-sm btn-mono">btn-sm btn-mono</div>
+                <br>
+
+                <div class="btn-sm disabled">btn-sm .disabled</div>
+                <br>
+                <hr>
+                <div class="btn-xs">btn-xs</div>
+                <br>
+
+                <div class="btn-xs btn-primary">btn-xs btn-primary</div>
+                <br>
+
+                <div class="btn-xs btn-secondary">btn-xs btn-secondary</div>
+                <br>
+
+                <div class="btn-xs btn-mono">btn-xs btn-mono</div>
+                <br>
+
+                <div class="btn-xs disabled">btn-xs .disabled</div>
+                <br>
+                <hr>
+                <div class="btn-lg btn-link">btn-link</div>
+                <br>
+
+                <div class="btn btn-link">btn-link</div>
+                <br>
+
+                <div class="btn-sm btn-link">btn-link</div>
+                <br>
+
+                <div class="btn-xs btn-link">btn-link</div>
+                <br>
+
+                <div class="btn-link">btn-link</div>
+                <br>
+                <hr>
+                <div class="btn-group">
+                    <div class="btn btn-primary">btn-primary</div>
+                    <div class="btn btn-secondary">btn-secondary</div>
+                </div>
+                <hr>
+                <div class="btn-group">
+                    <div class="btn btn-secondary">btn-secondary</div>
+                </div>
+                <hr>
+                <div class="btn-group">
+                    <div class="btn-lg btn-full btn-secondary">btn-lg btn-secondary</div>
+                </div>
+                <hr>
+                <div class="btn-lg btn-inblock btn-primary">btn-inblock</div>
+                <div class="btn-lg btn-inblock btn-secondary">btn-inblock</div>
+                <hr>
+                <div class="btn-group">
+                    <div class="btn-lg btn-inblock btn-primary">加入购物车</div>
+                    <div class="btn-lg btn-inblock btn-secondary">立即购买</div>
+                    <div class="btn-lg btn-inblock btn-primary disabled">加入购物车</div>
+                    <div class="btn-lg btn-inblock btn-secondary disabled">立即购买</div>
+                </div>
+            </div>
+            <div class="demo-item" style="padding:0 10px;">
+                <p class="demo-desc">特大按钮</p>
+
+                <div class="demo-block">
+                    <div class="btn-xl btn-block">
+                        400-800-7800
+                    </div>
+                    <div class="btn-xl btn-block">
+                        400-800-7800
+                    </div>
+                    <div class="btn-group">
+                        <div class="btn-xl">
+                            400-800-7800
+                        </div>
+                        <div class="btn-xl">
+                            400-800-7800
+                        </div>
+                    </div>
+                    <div class="btn-xl btn-full">
+                        400-800-7800
+                    </div>
+                    <div class="btn-xl btn-full">
+                        400-800-7800
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="icon">
+            <h1 class="title">图标</h1>
+
+            <div class="demo-item">
+                <div class="demo-block row" style="height: 100px">
+                    <iframe id="iconIfr" src="iconfont/demo_fontclass.html" width="100%" height="600" style="border: none"></iframe>
+                    <h3>持续更新中...</h3>
+                </div>
+            </div>
+            <script>
+                $("#iconIfr").load(function () {
+                    $("#iconIfr").contents().find(".main").css({
+                        "padding": "5px",
+                        "width": "calc(100% - 10px)"
+                    }).find(".icon_lists li").css({
+                        margin: "0 5px"
+                    });
+                });
+            </script>
+        </section>
+    </div>
+    <script src="//cdn.bootcss.com/jquery/1.12.1/jquery.js"></script>
+    <script>
+        (function (window, undefined) {
+            var requestAnimFrame = window.requestAnimationFrame
+                || window.webkitRequestAnimationFrame
+                || window.mozRequestAnimationFrame
+                || window.oRequestAnimationFrame
+                || window.msRequestAnimationFrame
+                || function (callback, element) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+
+            var cancelAnimationFrame = window.cancelAnimationFrame
+                || window.mozCancelAnimationFrame
+                || window.webkitCancelAnimationFrame
+                || window.msCancelAnimationFrame
+                || function (id) {
+                    clearTimeout(id);
+                };
+
+            var anchorPRE = 'anchor_';
+            // 监听页面加载完成后，检查是否需要定位锚点
+            window.onload = function () {
+                scrollToAnchor(anchorPRE, ".container");
+            };
+
+            // 监听地址栏url的hash值改变时，检查是否需要定位锚点
+            window.onhashchange = function () {
+                scrollToAnchor(anchorPRE, ".container");
+            };
+
+            // 滚动到自定义的伪锚点
+            function scrollToAnchor(tAnchorPRE, el) {
+                tAnchorPRE = tAnchorPRE || "anchor_";
+                var hash = getHash(), // 获取url的hash值
+                    anchor = getAnchor(hash, tAnchorPRE), // 获取伪锚点的id
+                    anchorDom, // 伪锚点dom对象
+                    anchorScrollTop; // 伪锚点距离页面顶部的距离
+
+                // 如果不存在伪锚点,则直接结束
+                if (anchor.length < 1) {
+                    return;
+                }
+
+                anchorDom = getDom(anchor);
+                anchorScrollTop = anchorDom.offsetTop;
+
+                var scrollEl = document.querySelector(el) || document.body || document.documentElement;
+                animationToAnchors(anchorScrollTop, el);
+                //animationToAnchor(scrollEl.scrollTop, anchorScrollTop, scrollEl);
+            }
+
+
+            function animationToAnchors(anchorScrollTop, scrollEl) {
+                // 滚动到指定元素处
+                $(scrollEl).animate({
+                    scrollTop: anchorScrollTop  //在指定方向上的边界值
+                }, 600);  //控制滚动的速度, 默认600ms
+                return false;
+            }
+
+            /*
+                @function 滚动到指定位置方法
+                @param startNum {int} -- 开始位置
+                @param stopNum {int} -- 结束位置
+            */
+            function animationToAnchor(startNum, stopNum, scrollEl) {
+                var nowNum = startNum + 10; // 步进为10
+
+                if (nowNum > stopNum) {
+                    nowNum = stopNum;
+                }
+
+                // 缓动方法
+                window.requestAnimationFrame(function () {
+                    scrollEl.scrollTop = nowNum; // 当前示例页面，滚动条在body，所以滚动body
+
+                    // 滚动到预定位置则结束
+                    if (nowNum == stopNum) {
+                        return;
+                    }
+
+                    animationToAnchor(nowNum, stopNum); // 只要还符合缓动条件，则递归调用
+                });
+            }
+
+            // 获取锚点id
+            function getAnchor(str, tAnchorPRE) {
+                return checkAnchor(str, tAnchorPRE) ? str.split(tAnchorPRE)[1] : "";
+            }
+
+            // 判断是否为特殊的hash值，也即是否为伪锚点
+            function checkAnchor(str, tAnchorPRE) {
+                return str.indexOf(tAnchorPRE) == 0 ? true : false;
+            }
+
+            // 获取hash值
+            function getHash() {
+                return window.location.hash.substring(1);
+            }
+
+            // 获取dom对象
+            function getDom(id) {
+                return document.getElementById(id);
+            }
+        })(window);
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(document).on("click", ".tab", function (e) {
+                var me = $(e.currentTarget);
+                //var parent = me.parent();
+                if (!me.hasClass("active")) {
+                    me.addClass("active").siblings().removeClass("active");
+                }
+            });
+        });
+    </script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

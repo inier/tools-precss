@@ -1,0 +1,62 @@
+@import '../mixins/mixins';
+@import '../base/settings';
+
+.checkbox
+{
+    display: inline-block;
+}
+
+.checkbox input
+{
+    position: relative;
+
+    display: inline-block;
+    overflow: visible;
+
+    width: 18px;
+    height: 1px;
+    margin-right: 8px;
+
+    vertical-align: middle;
+
+    border: 0;
+    outline: none;
+    background: none;
+
+    -webkit-appearance: none;
+}
+
+.checkbox input:before
+{
+    font-size: 18px;
+    line-height: $line-height-bar;
+
+    position: absolute;
+    top: -22px;
+    left: -4px;
+
+    content: $icon-unchecked;
+
+    color: $border-color;
+
+    @include icons;
+}
+
+.checkbox input:checked:before
+{
+    content: $icon-checked;
+
+    color: $bg-color-positive;
+}
+
+//.checkbox-s {
+//  @extend .checkbox;
+//}
+//
+//.checkbox-s input:before {
+//  content: $icon-unchecked-s;
+//}
+//
+//.checkbox-s input:checked:before {
+//  content: $icon-checked-s;
+//}

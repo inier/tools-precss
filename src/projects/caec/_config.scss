@@ -1,0 +1,31 @@
+@charset "utf-8";
+//== 本项目采用设置
+
+//-- 颜色
+//边框颜色
+$gray-lighter: #e0e0e0;
+//背景色
+$gray-lightest2: #f5f5f5;
+
+//-- 字体
+//H2字号 15px
+$font-size-lg: .9375rem;
+
+//标准字号 14px - 行高 19px
+$line-height: 1.4;
+//
+////H1-LH: 18px - 25px
+//$line-height-xl: (25 / 18);
+////H2-LH: 15px - 21px
+//$line-height-lg: (21 / 15);
+////H3-LH: 14px - 20px
+//$line-height-md: (20 / 14);
+////H4-LH: 13px - 18px
+//$line-height-sm: (18 / 13);
+////H5-LH: 12px - 17px
+//$line-height-xs: (17 / 12);
+////H6-LH: 10px - 14px
+//$line-height-xxs: (14 / 10);
+
+//-- 箭头图标
+$icon-arrow-right: "\e60a";

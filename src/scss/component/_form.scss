@@ -1,0 +1,137 @@
+@import "../mixins/mixins";
+@import "../base/settings";
+
+.ui-form {
+  background-color: $bg-color-body;
+}
+
+.form-item-order.active {
+  background-color: $active-bg;
+}
+
+/* 表单输入项 */
+.form-item {
+  position: relative;
+  font-size: $font-size-info;
+  height: $line-height-bar;
+  line-height: $line-height-bar;
+  padding-right: nth($page-padding, 1);
+  padding-left: nth($page-padding, 1);
+
+  label:not(.switch):not(.checkbox):not(.radio) {
+    width: $form-label-width;
+    position: absolute;
+    text-align: left;
+    box-sizing: border-box;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border: 0;
+    background: none;
+    padding-left: $form-label-width;
+  }
+  input[type="checkbox"], input[type="radio"] {
+    padding-left: 0;
+  }
+  .icon-close {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    @media (max-width: 320px) {
+      right: 1px;
+    }
+  }
+  @media (max-width: 320px) {
+    padding-left: nth($page-padding, 2);
+    padding-right: nth($page-padding, 2);
+  }
+}
+
+.form-item-textarea {
+  height: $form-textarea-height;
+}
+
+.form-item-textarea label {
+  vertical-align: top;
+}
+
+.form-item-textarea textarea {
+  margin-top: $form-textarea-margin-top;
+  border: none;
+}
+
+.form-item-textarea textarea:focus {
+  outline: none;
+}
+
+.form-item-link > li:after {
+  @include arrowlink;
+}
+
+.form-item-l label,
+.form-item-r button {
+  color: $link-color;
+  text-align: center;
+}
+
+.form-item-r .icon-close {
+  right: $form-right-close-right;
+}
+
+.form-item-l input:not([type="checkbox"]):not([type="radio"]) {
+  padding-left: $form-left-input-padding-left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-item-r {
+  padding-right: 0;
+}
+
+.form-item-r input:not([type="checkbox"]):not([type="radio"]) {
+  padding-left: 0;
+  padding-right: $form-right-input-padding-right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form-item-r button {
+  width: 110px;
+  height: $line-height-bar;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.form-item-r button.disabled {
+  color: $txt-color-muted;
+}
+
+.form-item-r button:not(.disabled):active {
+  background-color: $active-bg;
+}
+
+.form-item-pure input,
+.form-item-pure textarea {
+  padding-left: 0;
+}
+
+/* 表单展示项 */
+.form-item-show label {
+  color: $txt-color-info-dark;
+}
+
+.form-item-link:after {
+  @include arrowlink;
+}
+
+.form-item-checkbox,
+.form-item-radio,
+.form-item-switch {
+  display: -webkit-box;
+  -webkit-box-align: center;
+}

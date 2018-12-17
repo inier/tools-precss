@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>FrozenUI Demo</title>
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../shared/css/caec-mobile.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="../../tool-precss/cacss/lib/zepto.min.js"></script>
+    <script src="../../tool-precss/cacss/js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="header header-positive border-b">
+    <i class="icon-return" onclick="history.back()"></i>
+
+    <h1>按钮 btn</h1>
+    <button class="btn">回首页</button>
+</header>
+<footer class="footer footer-btn">
+    <ul class="tiled border-t">
+        <li data-href="index.html" class="border-r">
+            <div>基础样式</div>
+        </li>
+        <li data-href="ui.html" class="border-r">
+            <div>UI组件</div>
+        </li>
+        <li data-href="js.html">
+            <div>JS插件</div>
+        </li>
+    </ul>
+</footer>
+<section class="container">
+
+
+    <section id="btn">
+        <div class="demo-item">
+            <p class="demo-desc">普通超小按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn-xs">
+                        确定
+                    </button>
+                    <button class="btn-xs active">
+                        确定
+                    </button>
+                    <button class="btn-xs disabled">
+                        取消
+                    </button>
+                    <button class="btn-xs" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">普通小按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn-sm">
+                        确定
+                    </button>
+                    <button class="btn-sm active">
+                        确定
+                    </button>
+                    <button class="btn-sm disabled">
+                        取消
+                    </button>
+                    <button class="btn-sm" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">普通按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn">
+                        确定
+                    </button>
+                    <button class="btn active">
+                        确定
+                    </button>
+                    <button class="btn disabled">
+                        取消
+                    </button>
+                    <button class="btn" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">带进度的按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn btn-progress">确定</button>
+                    <button class="btn btn-progress">
+                        <span>50%</span>
+                        <a class="btn-inner" style="width:50%"><span>50%</span></a>
+                    </button>
+                    <button class="btn btn-progress" disabled>取消</button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">主色按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn btn-primary">
+                        确定
+                    </button>
+                    <button class="btn btn-primary active">
+                        确定
+                    </button>
+                    <button class="btn btn-primary disabled">
+                        确定
+                    </button>
+                    <button class="btn btn-primary" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">辅色按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn btn-secondary">
+                        确定
+                    </button>
+                    <button class="btn btn-secondary active">
+                        确定
+                    </button>
+                    <button class="btn btn-secondary disabled">
+                        确定
+                    </button>
+                    <button class="btn btn-secondary" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">普通大按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn-lg">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg active">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg disabled">
+                        取消
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">主色大按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-primary">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-primary active">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-primary disabled">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-primary" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">辅色大按钮</p>
+
+            <div class="demo-block">
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-secondary">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-secondary active">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-secondary disabled">
+                        确定
+                    </button>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-lg btn-secondary" disabled>
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="demo-item">
+            <p class="demo-desc">普通按钮组</p>
+            <div class="demo-block">
+                <div class="btn-group">
+                    <button class="btn-lg">
+                        拒绝
+                    </button>
+                    <button class="btn-lg btn-secondary">
+                        拒绝
+                    </button>
+                    <button class="btn-lg btn-primary">
+                        同意
+                    </button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn-lg disabled">
+                        拒绝
+                    </button>
+                    <button class="btn-lg btn-secondary active">
+                        拒绝
+                    </button>
+                    <button class="btn-lg btn-primary active">
+                        同意
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="btn btn-lg">btn</div>
+        <div class="btn btn-lg btn-primary">btn-primary</div>
+        <div class="btn btn-lg btn-secondary">btn-secondary</div>
+        <div class="btn btn-lg btn-mono">btn-mono</div>
+        <div class="btn btn-lg disabled">btn .disabled</div>
+        <hr>
+        <div class="btn">btn</div>
+        <div class="btn btn-primary">btn-primary</div>
+        <div class="btn btn-secondary">btn-secondary</div>
+        <div class="btn disabled">btn .disabled</div>
+        <hr>
+        <div class="btn btn-sm">btn</div>
+        <div class="btn btn-sm btn-primary">btn-primary</div>
+        <div class="btn btn-sm btn-secondary">btn-secondary</div>
+        <div class="btn btn-sm disabled">btn .disabled</div>
+        <hr>
+        <div class="btn btn-xs">btn</div>
+        <div class="btn btn-xs btn-primary">btn-primary</div>
+        <div class="btn btn-xs btn-secondary">btn-secondary</div>
+        <div class="btn btn-xs disabled">btn .disabled</div>
+        <hr>
+        <div class="btn-group">
+            <div class="btn btn-primary">btn-primary</div>
+            <div class="btn btn-secondary">btn-secondary</div>
+        </div>
+        <hr>
+        <div class="btn-group">
+            <div class="btn btn-secondary">btn-secondary</div>
+        </div>
+        <hr>
+        <div class="btn-group">
+            <div class="btn btn-full btn-secondary">btn-secondary</div>
+        </div>
+    </section>
+
+
+</section>
+<!-- /.container-->
+<script>
+    $('.list li,.tiled li').click(function () {
+        if ($(this).data('href')) {
+            location.href = $(this).data('href');
+        }
+    });
+    $('.header .btn').click(function () {
+        location.href = 'index.html';
+    });
+</script>
+</body>
+</html>

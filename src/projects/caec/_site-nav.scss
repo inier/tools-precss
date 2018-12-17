@@ -1,0 +1,17 @@
+$siteNavs: "home" "category" "cart" "profile";
+$siteNavSize: 25px;
+%siteNav-base{
+  @include img-retina("../assets/imgs/site-nav.png", "../assets/imgs/site-nav-2x.png", 50px, 100px);
+}
+
+@for $i from 1 through 4 {
+  .siteTab-#{nth($siteNavs, $i)} {
+    @extend %siteNav-base;
+    width: $siteNavSize;
+    height: $siteNavSize;
+    background-position: 0 $siteNavSize * -1 * ($i - 1);
+    &.active{
+      background-position: $siteNavSize * -1 $siteNavSize *-1 * ($i - 1);
+    }
+  }
+}

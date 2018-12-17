@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">-->
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="../css/caec-mobile.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <!--<script src="../lib/zepto.min.js"></script>-->
+    <!--<script src="../js/frozen.js"></script>-->
+    <title>CAEC-Tiles</title>
+    <style>
+
+    </style>
+</head>
+
+<body id="demo">
+    <div class="header border-b">
+        <h1 class="title">首页</h1>
+
+        <div class="btn pull-left">left</div>
+        <div class="btn pull-right">right</div>
+    </div>
+    <div class="footer border-t padding">
+        <div class="grid">
+            <div class="row">
+                <div class="col-20">
+                    <i class="icon-home-active" style="color:#3355ff"></i>
+
+                    <div>Tab1</div>
+                </div>
+                <div class="col-20">
+                    <i class="icon-category"></i>
+
+                    <div>Tab2</div>
+                </div>
+                <div class="col-20">
+                    <i class="icon-activity"></i>
+
+                    <div>Tab3</div>
+                </div>
+                <div class="col-20">
+                    <i class="icon-cart"></i>
+
+                    <div>Tab4</div>
+                </div>
+                <div class="col-20">
+                    <i class="icon-profile"></i>
+
+                    <div>Tab5</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="tooltips on">
+            <div>因接近年末，财务结算和物流运力紧张，2016年12月至2017年2月间下单的CS15定制车不做交付时效承诺。</div>
+            <i class="icon-arrow-up close"></i>
+        </div>
+        <script>
+            (function(el) {
+                var bodyEl = document.querySelector("body");
+                var wrapEl = document.querySelector(el);
+                var close = wrapEl.querySelector(".close");
+                bodyEl.classList.add("tooltips-open");
+
+                wrapEl.addEventListener("click", function(e) {
+                    bodyEl.classList.toggle("tooltips-open");
+                    wrapEl.classList.toggle("on");
+                    console.log(e.target);
+                }, false);
+            })(".tooltips");
+        </script>
+        <section class="text padding">
+            <h1>我是H1标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h1>
+            <h2>我是H2标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h2>
+            <h3>我是H3标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h3>
+            <h4>我是H4标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h4>
+            <h5>我是H5标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h5>
+            <h6>我是H6标签，据德国《明星》杂志报道，宠孩子的父母不稀奇，可近日德国富豪Marcus Prinz von Anhalt做的一件事。</h6>
+        </section>
+        <style>
+            .icons span {
+                display: inline-block;
+            }
+        </style>
+        <section class="icons">
+            <h2>site-nav</h2>
+            <span class="sp-home">首页</span>
+            <span class="sp-category">分类</span>
+            <span class="sp-cart">购物车</span>
+            <span class="sp-profile">我的</span>
+            <span class="sp-home active">首页</span>
+            <span class="sp-category active">分类</span>
+            <span class="sp-cart active">购物车</span>
+            <span class="sp-profile active">我的</span>
+            <h2>actType</h2>
+            <span class="sp-actType-crowdf">众筹</span>
+            <span class="sp-actType-groupon">团购</span>
+            <span class="sp-actType-seckill">秒杀</span>
+        </section>
+        <section class="grid">
+            <h2 class="title">二等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-50 border-r border-t">
+                    <div style="background:#fff">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-t">
+                    <div class="goods-item" style="background:#fff">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-r border-t">
+                    <div style="background:#fff">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50 border-t">
+                    <div class="goods-item" style="background:#fff">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">带槽</h3>
+
+            <div class="row gutter-yes" style="background-color: #f33;">
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-50">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">三等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=ddd&fg=333"></a>
+                        <a class="goods-title h3 nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">
+                            <span class="h5">¥</span><span class="h2">150000</span><span class="h5">.00</span>
+                        </div>
+                        <div class="goods-price-sale h6">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="title">带槽</h3>
+
+            <div class="row gutter-yes" style="background-color: #f33;">
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-33">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=aaa&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="title">四等分</h2>
+
+            <h3 class="title">不带槽</h3>
+
+            <div class="row gutter-no">
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-r border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+                <div class="col-25 border-t">
+                    <div class="goods-item">
+                        <a class="img-wrap" href="#"><img src="http://www.atool.org/placeholder.png?size=250x250&text=250x250&&bg=fff&fg=333"></a>
+                        <a class="goods-title nowrap-multi" href="">长安睿骋2016款</a>
+
+                        <div class="goods-price">¥150000.00</div>
+                        <div class="goods-price-sale">¥170000.00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

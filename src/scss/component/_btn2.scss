@@ -1,0 +1,153 @@
+/* 标准btn样式 */
+.btn {
+  font-size: $btn-size-md-text;
+  line-height: 1;
+
+  display: inline-block;
+
+  padding: 11px 22px;
+  // 禁止选中文本
+
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-transition: background-color .3s ease-out;
+  -moz-transition: background-color .3s ease-out;
+  -o-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out;
+
+  border: 1px solid $border-color;
+  -webkit-border-radius: $btn-border-radius;
+  border-radius: $btn-border-radius;
+  background-color: $bg-color-body;
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      outline: 0;
+      outline-offset: 0;
+    }
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: none;
+
+    color: $gray-darkest;
+  }
+}
+
+/* 带背景btn样式 */
+.btn-primary,
+.btn-secondary,
+.btn-mono {
+  color: $txt-color-white;
+  border: 0;
+  &:focus,
+  &.focus {
+    -webkit-transition: background-color .3s ease-in;
+    -moz-transition: background-color .3s ease-in;
+    -o-transition: background-color .3s ease-in;
+    transition: background-color .3s ease-in;
+    text-decoration: none;
+
+    color: $txt-color-white;
+  }
+}
+
+.btn-primary {
+  background-color: $btn-color-primary;
+  &:active {
+    background-color: darken($btn-color-primary, 6%);
+  }
+}
+
+.btn-secondary {
+  background-color: $btn-color-secondary;
+  &:active {
+    background-color: darken($btn-color-secondary, 6%);
+  }
+}
+
+.btn-mono {
+  color: $btn-color-mono-text;
+  background-color: $btn-color-mono;
+
+  @include border-radius();
+  &:active {
+    background-color: darken($btn-color-mono, 6%);
+  }
+}
+
+/* 按钮不可用，置灰状态 */
+.btn.disabled,
+.btn.btn-primary.disabled,
+.btn.btn-secondary.disabled,
+.btn.btn-mono.disabled {
+  cursor: default;
+
+  color: $btn-color-disabled-text;
+  background-color: $btn-color-disabled;
+}
+
+//-- 按钮规格：
+/* size: btn-lg、btn-md、btn-sm、btn-xs*/
+.btn-lg {
+  //height: $btn-size-lg;
+  font-size: $btn-size-lg-text;
+
+  padding: 13px 26px;
+}
+
+.btn-sm {
+  font-size: $btn-size-sm-text;
+  //height: $btn-size-sm;
+
+  padding: 8px 16px;
+}
+
+.btn-xs {
+  font-size: $btn-size-xs-text;
+  //height: $btn-size-xs;
+
+  padding: 6px 12px;
+}
+
+.btn-group {
+  display: -webkit-box;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  -webkit-box-align: center;
+  .btn,
+  button {
+    display: block;
+
+    margin-right: nth($page-padding, 1);
+
+    -webkit-box-flex: 1;
+    &:first-child {
+      margin-left: nth($page-padding, 1);
+    }
+    @media (max-width: 320px) {
+      & {
+        margin-right: nth($page-padding, 2);
+        &:first-child {
+          margin-left: nth($page-padding, 2);
+        }
+      }
+    }
+  }
+  .btn-full {
+    font-size: $btn-size-lg-text;
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding: 13px 26px;
+
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+}
+

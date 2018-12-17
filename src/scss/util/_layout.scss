@@ -1,0 +1,286 @@
+@import '../base/settings';
+@import '../mixins/mixins';
+
+//浮动
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.center-block {
+  @include center-block;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+//页面整体留白
+.padding {
+  @include tile-padding;
+}
+
+.padding-left {
+  @include tile-padding-left;
+}
+
+.padding-right {
+  @include tile-padding-right;
+}
+
+.no-padding {
+  @include no-padding;
+}
+
+.no-padding-left {
+  @include no-padding-left;
+}
+
+.no-padding-right {
+  @include no-padding-right;
+}
+
+// Wrapper to be used around all container not in .bar-title and .bar-tab
+.container {
+  // main绝对定位，进行内部滚动，修复ios中 fixed 元素和输入框的 定位异常bug
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  // 使之可以滚动
+  overflow: auto;
+
+  // 修复因绝对定位失去的弹性
+  -webkit-overflow-scrolling: touch;
+
+  // Hack to force all relatively and absolutely positioned elements still render while scrolling
+  // Note: This is a bug for "-webkit-overflow-scrolling: touch"
+  @include transform(translateZ(0));
+}
+
+// Hack to force all relatively and absolutely positioned elements still render while scrolling
+// Note: This is a bug for "-webkit-overflow-scrolling: touch"
+//.container > * {
+//  @include transform(translateZ(0));
+//}
+
+//页面header/footer
+header,
+footer,
+.header,
+.footer {
+  position: fixed;
+  z-index: $z-index-head;
+  left: 0;
+
+  width: 100%;
+}
+
+header,
+.header {
+  line-height: $header-height;
+
+  top: 0;
+
+  height: $header-height;
+}
+
+footer,
+.footer {
+  bottom: 0;
+
+  height: nth($footer-height, 2);
+  @media (max-width: 320px) {
+    height: nth($footer-height, 1);
+  }
+}
+
+header,
+.header {
+  & ~ .container {
+    border-top: $header-height solid transparent;
+  }
+  .h1,
+  h1 {
+    //text-align: center;
+    //font-size: $font-size-h1;
+    margin-bottom: 0;
+  }
+  .title {
+    line-height: 44px;
+
+    position: absolute;
+
+    width: 100%;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #000;
+  }
+  .icon-return {
+    position: absolute;
+    left: 0;
+  }
+  .btn {
+    font-size: 14px;
+
+    margin-top: 8px;
+    padding: 8px 16px;
+  }
+  .btn.pull-left {
+    margin-left: nth($page-padding, 1);
+    @media (max-width: 320px) {
+      margin-left: nth($page-padding, 2);
+    }
+  }
+  .btn.pull-right {
+    margin-right: nth($page-padding, 1);
+    @media (max-width: 320px) {
+      margin-right: nth($page-padding, 2);
+    }
+  }
+}
+
+footer,
+.footer {
+  & ~ .container {
+    border-bottom: nth($footer-height, 2) solid transparent;
+    @media (max-width: 320px) {
+      border-bottom: nth($footer-height, 1) solid transparent;
+    }
+  }
+}
+
+.header-2nd ~ .container {
+  border-top: ($header-height * 2) solid transparent;
+}
+
+.footer-2nd ~ .container {
+  border-bottom: (nth($footer-height, 2) * 2) solid transparent;
+  @media (max-width: 320px) {
+    border-bottom: (nth($footer-height, 1) * 2) solid transparent;
+  }
+}
+
+.placehold-wrap {
+  position: relative;
+
+  padding-top: 31.25%;
+}
+
+.placehold {
+  position: absolute;
+  z-index: $z-index-placehold;
+  top: 0;
+
+  display: -webkit-box;
+
+  -webkit-box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+
+  color: $txt-color-muted;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.placehold-img {
+  padding-top: 31.25%;
+
+  @include placehold-img;
+  .img,
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/**
+ * 排版
+ */
+.flex,
+.tiled {
+  display: -webkit-box;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.flex-ver {
+  -webkit-box-orient: vertical;
+}
+
+.flex-pack-start {
+  -webkit-box-pack: start;
+}
+
+.flex-pack-end {
+  -webkit-box-pack: end;
+}
+
+.flex-pack-center {
+  -webkit-box-pack: center;
+}
+
+.flex-align-start {
+  -webkit-box-align: start;
+}
+
+.flex-align-end {
+  -webkit-box-align: end;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+}
+
+/**
+ * 平铺
+ */
+.tiled {
+  .li,
+  li {
+    display: -webkit-box;
+
+    width: 100%;
+
+    text-align: center;
+
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+  }
+}
+
+///**
+// * 垂直上下居中
+// */
+//.vertical-middle {
+//  width: 100%;
+//  display: -webkit-box;
+//  -webkit-box-orient: vertical;
+//  -webkit-box-pack: center;
+//  -webkit-box-align: center;
+//  text-align: center;
+//}
+//
+////垂直对齐
+//.vc{
+//    position: relative;
+//    top: 50%;
+//    -webkit-transform: translateY(-50%);
+//    -o-transform: translateY(-50%);
+//    transform: translateY(-50%);
+//}

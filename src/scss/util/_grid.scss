@@ -1,0 +1,159 @@
+@import '../base/settings';
+
+$gutter: $grid-gutter-width / 2;
+
+.grid {
+  overflow: hidden;
+
+  [class *= 'col'] {
+    position: relative;
+
+    float: left;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    //img
+    //{
+    //    width: 100%;
+    //}
+  }
+  .row {
+    display: block;
+    overflow: hidden;
+
+    margin-right: -$gutter;
+    margin-left: -$gutter;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .col-10 {
+    width: 10%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-20 {
+    width: 20%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-25 {
+    width: 25%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-30 {
+    width: 30%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-33 {
+    width: 33.3333%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-40 {
+    width: 40%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-50 {
+    width: 50%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-60 {
+    width: 60%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-67 {
+    width: 66.6666%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-70 {
+    width: 70%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-75 {
+    width: 75%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-80 {
+    width: 80%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .col-90 {
+    width: 90%;
+    padding-right: $gutter;
+    padding-left: $gutter;
+  }
+  .row-flex {
+    display: -webkit-box;
+
+    -webkit-box-sizing: border-box;
+    width: 100%;
+    .col,
+    .col-1 {
+      float: none;
+
+      width: 0;
+
+      -webkit-box-flex: 1;
+    }
+    .col-2 {
+      -webkit-box-flex: 2;
+    }
+    .col-3 {
+      -webkit-box-flex: 3;
+    }
+    .col-4 {
+      -webkit-box-flex: 4;
+    }
+  }
+
+  .row-flex-ver {
+    -webkit-box-orient: vertical;
+    .col {
+      width: 100%;
+      height: 0;
+    }
+  }
+
+  .row {
+    &.gutter-yes {
+      margin-top: -($gutter);
+      [class *='col-'] {
+        margin-top: $gutter;
+        margin-bottom: $gutter;
+      }
+      .col-50:nth-last-child(2),
+      .col-50:last-child,
+      .col-33:nth-last-child(3),
+      .col-33:nth-last-child(2),
+      .col-33:last-child,
+      .col-25:nth-last-child(4),
+      .col-25:nth-last-child(3),
+      .col-25:nth-last-child(2),
+      .col-25:last-child,
+      {
+        margin-bottom: 0;
+      }
+    }
+    &.gutter-no {
+      margin-right: 0;
+      margin-left: 0;
+      [class *='col-'] {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+}

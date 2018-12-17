@@ -1,0 +1,218 @@
+@import "../base/settings";
+@import "../mixins/mixins";
+
+$txt-padding-top: 10px;
+$txt-padding-bottom: 10px;
+//list-wrap-link
+$wrap-link-padding: 30px 25px;
+$bg-color-active: darken($white-std, 10%);
+.list {
+  background-color: $white-std;
+  width: 100%;
+  & > li {
+    position: relative;
+    margin-left: nth($page-padding, 1);
+    display: -webkit-box;
+  }
+}
+
+.list-pure > li {
+  display: block;
+}
+
+/*文字列表*/
+.list-text > li,
+.list-pure > li {
+  position: relative;
+  padding-top: $txt-padding-top;
+  padding-bottom: $txt-padding-bottom;
+  padding-right: nth($page-padding, 1);
+  -webkit-box-align: center;
+}
+
+.list-text h4,
+.list-text p {
+  -webkit-box-flex: 1;
+}
+
+/*通栏列表*/
+.list-cover > li {
+  padding-left: nth($page-padding, 1);
+  margin-left: 0;
+}
+
+.list > li.border-t:first-child,
+.list > li:first-child > .border-t {
+  border: none;
+  background-image: none;
+}
+
+/*列表缩略图*/
+.list-thumb,
+.list-thumb-s,
+.list-img,
+.list-icon {
+  @include img;
+  margin: $list-img-margin;
+}
+
+.list-thumb {
+  width: $list-thumb-width;
+  height: $list-thumb-height;
+}
+
+/*列表普通图片*/
+.list-img {
+  width: $list-img-width;
+  height: $list-img-height;
+}
+
+.list-thumb-s {
+  width: $list-thumb-width-s;
+  height: $list-thumb-height-s;
+}
+
+/*列表icon*/
+.list-icon {
+  width: $list-icon-width;
+  height: $list-icon-width;
+}
+
+.list .avatar,
+.list .avatar-s,
+.list .avatar-lg {
+  margin: $list-img-margin;
+}
+
+/*列表主要信息*/
+.list-info {
+  -webkit-box-flex: 1;
+  padding-top: $txt-padding-top;
+  padding-bottom: $txt-padding-bottom;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  padding-right: nth($page-padding, 1);
+  p {
+    font-size: $font-size-sub;
+  }
+}
+
+.list-text .list-info {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.list li h4 {
+  font-size: $font-size-info;
+}
+
+.list:not(.list-text) li > p,
+.list li > h5 {
+  font-size: $font-size-sub;
+}
+
+/*列表按压态*/
+
+.list-active > li:active,
+.list li.active {
+  background-color: $bg-color-active;
+  padding-left: nth($page-padding, 1);
+  margin-left: 0;
+}
+
+.list-active > li:active,
+.list > li.active,
+.list > li.active > .border-t,
+.list > li.active + li > .border-t,
+.list > li.active + li.border-t {
+  background-image: none;
+  border-top-color: $bg-color-active;
+}
+
+/*连接列表*/
+.list-link > li:after {
+  @include arrowlink;
+}
+
+.list-text.list-link > li {
+  padding-right: nth($wrap-link-padding, 1);
+}
+
+.list-link .list-info {
+  padding-right: nth($wrap-link-padding, 1);
+}
+
+/*  功能类 */
+.list-function .list-info {
+  padding-right: 75px;
+}
+
+.list-function .btn {
+  position: absolute;
+  top: 50%;
+  right: nth($page-padding, 1);
+  margin-top: -15px;
+}
+
+.list-function .btn-s {
+  margin-top: -12px;
+}
+
+.list-function.list-link .list-info {
+  padding-right: 90px;
+}
+
+.list-function.list-link .btn {
+  right: nth($wrap-link-padding, 1);
+}
+
+.list-function li {
+  -webkit-box-align: inherit;
+}
+
+.list-one {
+  > li {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: $line-height-bar;
+  }
+  .list-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+  }
+  h4 {
+    -webkit-box-flex: 1;
+  }
+}
+
+@media (max-width: 320px) {
+  .list > li {
+    margin-left: nth($page-padding, 2);
+  }
+  .list-text > li,
+  .list-pure > li,
+  .list-info {
+    padding-right: nth($page-padding, 2);
+  }
+  .list-cover > li,
+  .list-active > li:active,
+  .list li.active {
+    padding-left: nth($page-padding, 2);
+  }
+  .list-text.list-link > li {
+    padding-right: nth($wrap-link-padding, 2);
+  }
+  .list-function .list-info {
+    padding-right: 70px;
+  }
+  .list-function .btn {
+    right: nth($page-padding, 2);
+  }
+  .list-function.list-link .list-info {
+    padding-right: 85px;
+  }
+  .list-function.list-link .btn {
+    right: nth($wrap-link-padding, 2);
+  }
+}

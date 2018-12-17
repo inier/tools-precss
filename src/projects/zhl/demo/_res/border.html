@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Demo -- border</title>
+    <link rel="stylesheet" href="../shared/css/caec-mobile.css">
+    <link rel="stylesheet" href="demo.css">
+    <script src="../../tool-precss/cacss/lib/zepto.min.js"></script>
+    <script src="../../tool-precss/cacss/js/frozen.js"></script>
+</head>
+
+<body ontouchstart>
+<header class="header header-positive border-b">
+    <i class="icon-return" onclick="history.back()"></i>
+
+    <h1>1px解决方案 border</h1>
+    <button class="btn">回首页</button>
+</header>
+<footer class="footer footer-btn">
+    <ul class="tiled border-t">
+        <li data-href="index.html" class="border-r">
+            <div>基础样式</div>
+        </li>
+        <li data-href="ui.html" class="border-r">
+            <div>UI组件</div>
+        </li>
+        <li data-href="js.html">
+            <div>JS插件</div>
+        </li>
+    </ul>
+</footer>
+<section class="container">
+    <section id="border">
+        <div class="demo-item">
+            <p class="demo-desc">0.5px解决方案</p>
+
+            <div class="demo-block">
+                <ul class="list-text border-list">
+                    <li class="border-t">上边框</li>
+                    <li class="border">边框</li>
+                    <li class="border-b">下边框</li>
+                    <li class="border-tb">上下边框</li>
+                    <li class="border-l">左边框</li>
+                    <li class="border-r">右边框</li>
+                    <li class="border-radius">
+                        圆角边框
+                    </li>
+                </ul>
+                <div class="k1 border-t">border-t</div>
+                <div class="k1 border-r">border-r</div>
+                <div class="k1 border-b">border-b</div>
+                <div class="k1 border-l">border-l</div>
+                <div class="k1 border-tb">border-tb</div>
+                <div class="k1 border-r border-l">border-rl</div>
+                <div class="k2 border-t">border-t</div>
+                <div class="k2 border-r">border-r</div>
+                <div class="k2 border-b">border-b</div>
+                <div class="k2 border-l">border-l</div>
+                <div class="k2 border-tb">border-tb</div>
+                <div class="k2 border-r border-l">border-rl</div>
+                <input class="border-radius">
+            </div>
+        </div>
+    </section>
+
+
+</section>
+<!-- /.container-->
+<script>
+    $('.list li,.tiled li').click(function () {
+        if ($(this).data('href')) {
+            location.href = $(this).data('href');
+        }
+    });
+    $('.header .btn').click(function () {
+        location.href = 'index.html';
+    });
+</script>
+</body>
+</html>

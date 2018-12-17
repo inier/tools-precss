@@ -1,0 +1,77 @@
+.icon-bg-1 {
+  background-image: url(_sprites.png);
+  background-position: -302px 0;
+  width: 294px;
+  height: 78px;
+}
+
+.icon-bg_direction_nav, .icon-go-back, .icon-ico-android {
+  background-image: url(_sprites.png);
+  background-position: -354px -182px;
+  width: 57px;
+  height: 27px;
+}
+
+.icon-go-back, .icon-ico-android {
+  background-position: -302px -80px;
+  width: 50px;
+  height: 200px;
+}
+
+.icon-ico-android {
+  background-position: -391px -282px;
+  width: 86px;
+  height: 101px;
+}
+
+.icon-ico-apple, .icon-ico-css3, .icon-ico-windows {
+  background-image: url(_sprites.png);
+  background-position: -302px -282px;
+  width: 87px;
+  height: 101px;
+}
+
+.icon-ico-css3, .icon-ico-windows {
+  background-position: -479px -282px;
+  width: 72px;
+  height: 100px;
+}
+
+.icon-ico-windows {
+  background-position: -456px -80px;
+  width: 99px;
+}
+
+.icon-iegotohell, .icon-step_bg, .icon-stripe {
+  background-image: url(_sprites.png);
+  background-position: -576px -80px;
+  width: 1px;
+  height: 1px;
+}
+
+.icon-step_bg, .icon-stripe {
+  background-position: -354px -80px;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-stripe {
+  background-position: -557px -123px;
+  width: 25px;
+  height: 23px;
+}
+
+.icon-triangle_white, .icon-ui_img8 {
+  background-image: url(_sprites.png);
+  background-position: -557px -80px;
+  width: 17px;
+  height: 41px;
+}
+
+.icon-ui_img8 {
+  background-position: 0 0;
+  width: 300px;
+  height: 1800px;
+}
+
+/*# sourceMappingURL=sprites.css.map */

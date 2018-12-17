@@ -1,0 +1,350 @@
+@charset "UTF-8";
+body#demo {
+  background: #eee;
+}
+
+#demo p {
+  margin-bottom: .5rem;
+}
+#demo .main {
+  padding-top: 20px;
+}
+#demo .main h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: left;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+#demo .helps {
+  margin-top: 40px;
+}
+#demo .helps pre {
+  overflow: auto;
+  margin: 10px 0;
+  padding: 20px;
+  border: solid 1px #e7e1cd;
+  background-color: #fffdef;
+}
+#demo .icon_lists {
+  overflow: hidden;
+}
+#demo .icon_lists li {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+#demo .icon_lists .icon {
+  font-size: 42px;
+  line-height: 100px;
+  margin: 10px 0;
+  -webkit-transition: font-size .25s ease-out 0s;
+  -moz-transition: font-size .25s ease-out 0s;
+  transition: font-size .25s ease-out 0s;
+  color: #333;
+}
+#demo .icon_lists .icon:hover {
+  font-size: 60px;
+  margin-left: -9px;
+}
+#demo .demo-desc {
+  font-size: 16px;
+  padding: 10px;
+  color: #7cae23;
+}
+#demo .demo-block {
+  position: relative;
+}
+#demo .demo-block .header,
+#demo .demo-block .footer {
+  position: absolute;
+}
+#demo .tab-nav {
+  top: 45px;
+}
+#demo .tab-content {
+  margin-top: 45px;
+}
+#demo .demo-block > .list,
+#demo .demo-block > .form,
+#demo .demo-block > .tooltips {
+  margin-bottom: 20px;
+}
+#demo .content h3 {
+  font-size: 15px;
+  line-height: 44px;
+  padding: 0 15px;
+}
+#demo .border-list {
+  background-color: #fff;
+}
+#demo .border-list li {
+  width: 70%;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  -webkit-box-pack: center;
+}
+#demo .btn-group-bottom {
+  bottom: 56px;
+}
+#demo .table {
+  line-height: 40px;
+  text-align: center;
+  background-color: #fff;
+}
+#demo .scroller {
+  overflow: hidden;
+  width: auto;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+}
+#demo .scroller li {
+  margin-bottom: 10px;
+}
+#demo .notice {
+  z-index: -1;
+  top: 0;
+  height: 400px;
+}
+#demo .icon-lists li {
+  float: left;
+  width: 103px;
+  height: 100px;
+  text-align: center;
+}
+#demo .icon-lists li i {
+  font-size: 32px;
+  line-height: 44px;
+}
+#demo .icon-lists .icon,
+#demo .icon-lists [class^='icon-'] {
+  margin: 10px 0;
+  color: #000;
+}
+#demo .code,
+#demo .fontclass {
+  font-size: 12px;
+}
+#demo .col {
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+  background: #777;
+}
+#demo .flex {
+  min-height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+#demo .flex-ver {
+  min-height: 80px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+#demo .row-flex-ver {
+  min-height: 100px;
+  border: 1px solid #ddd;
+}
+#demo .test-img {
+  width: 50px;
+  height: 50px;
+  background: #777;
+}
+#demo section:first-child h1.title {
+  margin-top: 0;
+}
+#demo section h1.title {
+  margin-top: 5%;
+}
+#demo section.page-padding h1.title,
+#demo section.page-padding h2.title,
+#demo section.page-padding h3.title,
+#demo section.page-padding h5.title {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#demo section h1.title,
+#demo section h2.title,
+#demo section h3.title,
+#demo section h5.title {
+  margin-bottom: 0;
+  padding-left: 10px;
+}
+#demo section h1.title {
+  line-height: 44px;
+  height: 44px;
+  background: #e1d498;
+}
+#demo section h2.title {
+  line-height: 38px;
+  height: 38px;
+  background: #ffc;
+}
+#demo section h3.title {
+  line-height: 34px;
+  height: 34px;
+  background: #f2dede;
+}
+#demo section h5.title {
+  line-height: 28px;
+  height: 28px;
+  background: #e0e0e0;
+}
+#demo section .bdr [class*='col'] {
+  border: 1px solid #fffadf;
+  background: #f33;
+}
+#demo section [class*='col'] .img-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+#demo section [class*='col'] .img-wrap .img,
+#demo section [class*='col'] .img-wrap img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#demo section .a {
+  background: #d22;
+}
+#demo section .goods-item {
+  background: #fff;
+}
+#demo section .goods-title,
+#demo section .goods-price,
+#demo section .goods-price-sale {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+#demo section .goods-title {
+  color: #1f1f1f;
+}
+#demo section .goods-price {
+  color: #f33;
+}
+#demo section .goods-price-sale {
+  font-size: 10px;
+  padding-bottom: 5%;
+  text-decoration: line-through;
+  color: #9d9d9d;
+}
+#demo section #border {
+  background-color: #fff;
+}
+#demo section [class*='k1 border-'] {
+  width: 80%;
+  margin: 5px;
+  text-align: center;
+}
+#demo section [class*='k2 border-'] {
+  width: 80%;
+  margin: 5px;
+}
+#demo section .border:before, #demo section .border:after,
+#demo section .border-t:before,
+#demo section .border-t:after,
+#demo section .border-r:before,
+#demo section .border-r:after,
+#demo section .border-b:before,
+#demo section .border-b:after,
+#demo section .border-l:before,
+#demo section .border-l:after,
+#demo section .border-tb:before,
+#demo section .border-tb:after {
+  border-color: #f33 !important;
+}
+#demo .piece4item {
+  line-height: 1;
+  padding: 10%;
+  text-align: center;
+}
+#demo .piece4item i {
+  font-size: 42px;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 8px;
+}
+#demo .piece4item i.bk1 {
+  color: #39f;
+  background-color: #ff1;
+}
+#demo .piece4item i.bk2 {
+  color: #fff;
+  background-color: #c42f3f;
+}
+#demo .piece4item i.bk3 {
+  color: #333;
+  background-color: #00ff98;
+}
+#demo .piece4item i.bk4 {
+  color: #fff;
+  background-color: #0296f1;
+}
+#demo .piece4item i.bk5 {
+  color: #333;
+  background-color: #d7ba42;
+}
+#demo .piece4item i.bk6 {
+  color: #fff;
+  background-color: #c42f3f;
+}
+#demo .piece4item i.bk7 {
+  color: #fff;
+  background-color: #0e0;
+}
+#demo .piece4item i.bk8 {
+  color: #333;
+  background-color: #00ff98;
+}
+
+.header {
+  color: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+  box-shadow: 0 0 3px #999;
+}
+
+.footer {
+  line-height: 50px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#c0c0c0));
+  box-shadow: 0 0 3px #999;
+}
+@media screen and (min-width: 375px) {
+  .footer {
+    padding-top: 8px;
+  }
+}
+.footer .col-20 {
+  line-height: 1;
+  text-align: center;
+  color: #333;
+}
+.footer .col-20.active .icon-home-fill,
+.footer .col-20.active .icon-category-fill,
+.footer .col-20.active .icon-activity-fill,
+.footer .col-20.active .icon-cart-fill,
+.footer .col-20.active .icon-profile-fill,
+.footer .col-20.active .icons-txt {
+  color: #35f;
+}
+.footer .col-20 i {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 3px;
+}
+.footer .col-20 .icons-txt {
+  font-size: 0.625rem;
+  color: #838383;
+}
+
+/* 常用板块 */
+
+/*# sourceMappingURL=demo.css.map */

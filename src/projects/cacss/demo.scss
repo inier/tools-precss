@@ -1,0 +1,400 @@
+@import "../../scss/base/settings";
+
+body#demo {
+  background: #eee;
+}
+
+#demo {
+  p {
+    margin-bottom: 0.5rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  //icon+
+  .main {
+    padding-top: 20px;
+  }
+
+  .main h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .helps {
+    margin-top: 40px;
+  }
+
+  .helps pre {
+    padding: 20px;
+    margin: 10px 0;
+    border: solid 1px #e7e1cd;
+    background-color: #fffdef;
+    overflow: auto;
+  }
+
+  .icon_lists {
+    overflow: hidden;
+  }
+
+  .icon_lists li {
+    float: left;
+    width: 25%;
+    text-align: center;
+  }
+
+  .icon_lists .icon {
+    font-size: 42px;
+    line-height: 100px;
+    margin: 10px 0;
+    color: #333;
+    -webkit-transition: font-size 0.25s ease-out 0s;
+    -moz-transition: font-size 0.25s ease-out 0s;
+    transition: font-size 0.25s ease-out 0s;
+
+  }
+
+  .icon_lists .icon:hover {
+    font-size: 60px;
+    margin-left: -9px;
+  }
+
+  //demo+
+  .demo-desc {
+    padding: 10px;
+    font-size: 16px;
+    color: #7CAE23;
+  }
+
+  .demo-block {
+    position: relative;
+  }
+
+  .demo-block .header,
+  .demo-block .footer {
+    position: absolute;
+  }
+
+  .tab-nav {
+    top: 45px;
+  }
+
+  .tab-content {
+    margin-top: 45px;
+  }
+
+  .demo-block > .list, .demo-block > .form, .demo-block > .tooltips {
+    margin-bottom: 20px;
+  }
+
+  .content h3 {
+    padding: 0 15px;
+    line-height: 44px;
+    font-size: 15px;
+  }
+
+  .border-list {
+    background-color: #fff;
+  }
+
+  .border-list li {
+    width: 70%;
+    margin: 10px auto;
+    padding: 5px;
+    -webkit-box-pack: center;
+    text-align: center;
+  }
+
+  .btn-group-bottom {
+    bottom: 56px;
+  }
+
+  .table {
+    line-height: 40px;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .scroller {
+    width: auto;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .scroller li {
+    margin-bottom: 10px;
+  }
+
+  .notice {
+    top: 0;
+    z-index: -1;
+    height: 400px;
+  }
+
+  .icon-lists li {
+    float: left;
+    height: 100px;
+    width: 103px;
+    text-align: center;
+
+  }
+
+  .icon-lists li i {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .icon-lists .icon, .icon-lists [class^="icon-"] {
+    margin: 10px 0;
+    color: #000;
+  }
+
+  .code, .fontclass {
+    font-size: 12px;
+  }
+
+  .col {
+    padding: 5px;
+    background: #777;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+  }
+
+  .flex {
+    border: 1px solid #ddd;
+    min-height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .flex-ver {
+    border: 1px solid #ddd;
+    min-height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .row-flex-ver {
+    border: 1px solid #ddd;
+    min-height: 100px;
+  }
+
+  .test-img {
+    width: 50px;
+    height: 50px;
+    background: #777;
+  }
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#e0e0e0));
+    color: #333;
+    box-shadow: 0 0 3px #999;
+  }
+
+  .footer {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), to(#c0c0c0));
+    color: #333;
+    box-shadow: 0 0 3px #999;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 50px;
+    @media screen and (min-width: 375px) {
+      padding-top: 8px;
+    }
+    .col-20 {
+      line-height: 1;
+      text-align: center;
+      color: #333;
+      &.active {
+        .icon-home-fill,
+        .icon-category-fill,
+        .icon-activity-fill,
+        .icon-cart-fill,
+        .icon-profile-fill,
+        .icons-txt {
+          color: #3355ff;
+        }
+      }
+      i {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 3px;
+      }
+      .icons-txt {
+        font-size: $font-size-h6;
+        color: #838383;
+      }
+    }
+  }
+  section {
+    &:first-child {
+      h1.title {
+        margin-top: 0;
+      }
+    }
+    h1.title {
+      margin-top: 5%;
+    }
+    &.page-padding {
+      h1.title,
+      h2.title,
+      h3.title,
+      h5.title {
+        margin-left: -15px;
+        margin-right: -15px;
+      }
+    }
+    h1.title,
+    h2.title,
+    h3.title,
+    h5.title {
+      padding-left: 10px;
+      margin-bottom: 0;
+    }
+    h1.title {
+      height: 44px;
+      line-height: 44px;
+      background: #e1d498;
+    }
+    h2.title {
+      height: 38px;
+      line-height: 38px;
+      background: #ffffcc;
+    }
+    h3.title {
+      height: 34px;
+      line-height: 34px;
+      background: #f2dede;
+    }
+    h5.title {
+      background: #e0e0e0;
+      height: 28px;
+      line-height: 28px;
+    }
+
+    .bdr [class*="col"] {
+      border: 1px solid #fffadf;
+      background: #f33;
+    }
+
+    [class*="col"] .img-wrap {
+      display: block;
+      position: relative;
+      padding-bottom: 100%;
+      overflow: hidden;
+      .img,
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .a {
+      background: #d22;
+    }
+
+    .goods-item {
+      background: #fff;
+    }
+    .goods-title,
+    .goods-price,
+    .goods-price-sale {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .goods-title {
+      color: #1f1f1f;
+    }
+
+    .goods-price {
+      color: #f33;
+    }
+
+    .goods-price-sale {
+      font-size: 10px;
+      text-decoration: line-through;
+      color: #9d9d9d;
+      padding-bottom: 5%;
+    }
+
+    // block:border
+    #border {
+      background-color: #fff;
+    }
+
+    [class*="k1 border-"] {
+      margin: 5px;
+      width: 80%;
+      text-align: center;
+    }
+
+    [class*="k2 border-"] {
+      margin: 5px;
+      width: 80%;
+    }
+
+    .border,
+    .border-t,
+    .border-r,
+    .border-b,
+    .border-l,
+    .border-tb {
+      &:before, &:after {
+        border-color: #f33 !important;
+      }
+    }
+  }
+
+  .piece4item {
+    text-align: center;
+    padding: 10%;
+    line-height: 1;
+    i {
+      display: inline-block;
+      font-size: 42px;
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 8px;
+      &.bk1 {
+        background-color: #ff1;
+        color: #39f;
+      }
+      &.bk2 {
+        background-color: #C42F3F;
+        color: #fff;
+      }
+      &.bk3 {
+        background-color: #00ff98;
+        color: #333;
+      }
+      &.bk4 {
+        background-color: #0296f1;
+        color: #fff;
+      }
+      &.bk5 {
+        background-color: #d7ba42;
+        color: #333;
+      }
+      &.bk6 {
+        background-color: #C42F3F;
+        color: #fff;
+      }
+      &.bk7 {
+        background-color: #00ee00;
+        color: #fff;
+      }
+      &.bk8 {
+        background-color: #00ff98;
+        color: #333;
+      }
+    }
+  }
+}
+
+/* 常用板块 */

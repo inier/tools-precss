@@ -1,0 +1,64 @@
+@import '../mixins/mixins';
+@import '../base/settings';
+
+.radio
+{
+    line-height: 25px;
+
+    display: inline-block;
+}
+
+.radio input
+{
+    position: relative;
+
+    display: inline-block;
+    overflow: visible;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+
+    vertical-align: middle;
+
+    border: 0;
+    outline: none;
+    background: none;
+
+    -webkit-appearance: none;
+}
+
+.radio input:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    content: '';
+
+    border: 1px solid $border-color;
+    border-radius: 17px;
+    background-clip: padding-box;
+}
+
+.radio input:checked:after
+{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+
+    display: block;
+
+    width: 14px;
+    height: 14px;
+
+    content: '';
+
+    border-radius: 7px;
+    background: $bg-color-positive;
+}
